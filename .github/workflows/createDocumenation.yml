@@ -1,0 +1,39 @@
+name: Xcode - Build and Analyze
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build and analyse default scheme using xcodebuild command
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          
+      - name: Update local branch
+        run: git reset --hard main
+        
+      - name: Build documentation
+        env:
+          scheme: ${{ 'default' }}
+        run: |
+          xcodebuild docbuild -scheme DoccFramework -destination 'generic/platform=ios' -derivedDataPath '.documentationArchive/'
+          
+      - name: Create web folder
+        run: |
+          xcodebuild docbuild -scheme DoccFramework -destination 'generic/platform=ios' -derivedDataPath '.documentation/'
+          $(xcrun --find docc) process-archive transform-for-static-hosting Documentation/Build/Products/Debug-iphoneos/DoccFramework.doccarchive --output-path '.documentation' --hosting-base-path 'DoccFramework'
+          
+      - name: Commit changes
+        run: |
+          git add .documentation
+          git commit -m "Updated the documentation"
+          
+      - name: Push changes
+        run: |
+          git push --force
