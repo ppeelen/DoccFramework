@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-12
 
     steps:
-      - name: "Select the last available Xcode Beta"
+      - name: "Select the last available Xcode"
         uses: devbotsxyz/xcode-select@v1
         
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
           
       - name: Commit changes
         run: |
-          git add .documentation
+          git add Docs
           git commit -m "Updated the documentation"
           
       - name: Push changes
