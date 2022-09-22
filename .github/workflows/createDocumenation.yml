@@ -31,11 +31,11 @@ jobs:
           
       - name: Create web folder
         run: |
-          $(xcrun --find docc) process-archive transform-for-static-hosting .documentationArchive/Build/Products/Debug-iphoneos/DoccFramework.doccarchive --output-path 'Docs' --hosting-base-path 'DoccFramework'
+          $(xcrun --find docc) process-archive transform-for-static-hosting .documentationArchive/Build/Products/Debug-iphoneos/DoccFramework.doccarchive --output-path 'docs' --hosting-base-path 'DoccFramework'
           
       - name: Commit changes
         run: |
-          git add Docs
+          git add docs
           git commit -m "Updated the documentation"
           
       - name: Push changes
