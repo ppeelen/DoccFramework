@@ -25,5 +25,5 @@ Now that we know the path, which is: `Documentation/Build/Products/Debug-iphoneo
 $(xcrun --find docc) process-archive \
     transform-for-static-hosting Documentation/Build/Products/Debug-iphoneos/DoccFramework.doccarchive \
     --output-path DocsWeb \
-    --hosting-base-path 'doccframework'
+    --hosting-base-path 'DoccFramework'
 ```
