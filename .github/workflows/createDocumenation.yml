@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: "Select the last available Xcode Beta"
         uses: devbotsxyz/xcode-select@v1
-        with:
-            beta: true
         
       - name: Checkout
         uses: actions/checkout@v3
