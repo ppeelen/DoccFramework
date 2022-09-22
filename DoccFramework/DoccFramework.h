@@ -14,5 +14,4 @@ FOUNDATION_EXPORT double DoccFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char DoccFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DoccFramework/PublicHeader.h>
-
-
+#import <DoccFramework/DummyObjcClass.h>
