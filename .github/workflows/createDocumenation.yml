@@ -28,8 +28,7 @@ jobs:
           
       - name: Create web folder
         run: |
-          xcodebuild docbuild -scheme DoccFramework -destination 'generic/platform=ios' -derivedDataPath '.documentation/'
-          $(xcrun --find docc) process-archive transform-for-static-hosting Documentation/Build/Products/Debug-iphoneos/DoccFramework.doccarchive --output-path '.documentation' --hosting-base-path 'DoccFramework'
+          $(xcrun --find docc) process-archive transform-for-static-hosting .documentationArchive/Build/Products/Debug-iphoneos/DoccFramework.doccarchive --output-path '.documentation' --hosting-base-path 'DoccFramework'
           
       - name: Commit changes
         run: |
