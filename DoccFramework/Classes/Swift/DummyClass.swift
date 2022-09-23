@@ -8,6 +8,7 @@
 import Foundation
 
 /// This is just a dummy class called `DummyClass`
+@objc
 public class DummyClass {
     
     /// The version number we have in this file
