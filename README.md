@@ -30,3 +30,6 @@ $(xcrun --find docc) process-archive \
 
 ## Documentation
 You can open and read the documentation here: [https://ppeelen.github.io/DoccFramework/documentation/doccframework](https://ppeelen.github.io/DoccFramework/documentation/doccframework). 
+
+## Turorials
+Tutorials are also available using this link: [https://ppeelen.github.io/DoccFramework/tutorials/doccframework](https://ppeelen.github.io/DoccFramework/tutorials/doccframework).
