@@ -1,0 +1,75 @@
+@Tutorial(time: 2) {
+    @Intro(title: "Hi, using UI Kit") {
+        We all feel lonely some times, and so does the debugger. Sometimes we just need to be able to say Hi to the debugger.
+        
+        @Image(source: "tutorial_1", alt: "Showing example output in the debugger when running testsuite")
+    }
+    
+    @Section(title: "Setting up the code") {
+        @ContentAndMedia {
+            Start off with adding the framework to your project. 
+            
+            @Image(source: "SayingHi_framework", alt: "Add the framework to your project")
+        }
+        
+        @Steps {
+            @Step {
+                Open `ViewController.h`. Here we are going to implement the Say hi functionality.
+                
+                @Code(name: "ViewController.swift", file: "UIKit_1.swift")
+            }
+            
+            @Step {
+                Lets start by adding the import of the framework.
+                
+                @Code(name: "ViewController.swift", file: "UIKit_2.swift")
+            }
+            
+            @Step {
+                Now lets create an IBAction which we'll use later with a button.
+                
+                @Code(name: "ViewController.swift", file: "UIKit_3.swift")
+            }
+            
+            @Step {
+                Now we need to create the `DummyClass` object to which we'll soon make a reference
+                
+                @Code(name: "ViewController.swift", file: "UIKit_4.swift")
+            }
+            
+            @Step {
+                Now lets call the `sayHi(name:)` method to which we'll send the name `App`
+                
+                @Code(name: "ViewController.swift", file: "UIKit_5.swift")
+            }
+        }
+    }
+    
+    @Section(title: "Adding the button") {
+        @ContentAndMedia {
+            Now that we have the code in place, we need to add a button to the UI. 
+            
+            @Image(source: "section2", alt: "Example of an Say Hi! button in the Interface Builder")
+        }
+        
+        @Steps {
+            @Step {
+                Start off by opening the `Main.storyboard` for the project.
+                
+                @Image(source: "main_1", alt: "The main file")
+            }
+            
+            @Step {
+                Now add a new button by selecting the plus sign in the top right corner (+) and type Button. Drag it in into the view.  
+                
+                @Image(source: "main_2", alt: "Add a button")
+            }
+            
+            @Step {
+                Now you need connect the button by holding CTRL and dragging it to `View Controller`. Here you should select `sayHi:`.
+                
+                @Image(source: "main_3", alt: "Connect the button")
+            }
+        }
+    }
+}

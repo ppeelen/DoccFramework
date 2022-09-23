@@ -1,0 +1,67 @@
+@Tutorial(time: 2) {
+    @Intro(title: "Hi, using SwiftUI") {
+        In this tutorial we're going to say Hi in a SwiftUI app. 
+        
+        @Image(source: "tutorial_1", alt: "Showing example output in the debugger when running testsuite")
+    }
+    
+    @Section(title: "Setting up the framework") {
+        @ContentAndMedia {
+            Start off with adding the framework to your project. 
+            
+            @Image(source: "SayingHi_framework", alt: "Add the framework to your project")
+        }
+        
+        @Steps {
+            @Step {
+                Open up `ContentView.swift`. It should look something like this, with a "Hello, world" in a VStack.
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_1.swift") {
+                    @Image(source: "SwiftUI_1.png", alt: "The default startup screen for SwiftUI")
+                }
+            }
+            
+            @Step {
+                Since we don't want to say hello to the world, lets remove all content in the VStack.
+                
+                This will clear the full contents of the app.
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_2.swift") {
+                    @Image(source: "SwiftUI_2.png", alt: "The view of an empty app")
+                }
+            }
+            
+            @Step {
+                Now lets import our framework to the view.
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_3.swift")
+            }
+            
+            @Step {
+                Next up, we'll add a button with an action and a label.
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_4.swift")
+            }
+            
+            @Step {
+                As action, we'll start off by creating the `DummyClass` object which we'll reference next.
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_5.swift")
+            }
+            
+            @Step {
+                Now lets call the `sayHi(name:)` method to which we'll send the name `App`
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_6.swift")
+            }
+            
+            @Step {
+                Last, but not least, the button needs some text for the user to select.
+                
+                @Code(name: "ContentView.swift", file: "SwiftUI_7.swift"){
+                    @Image(source: "SwiftUI_7.png", alt: "The contents of the final view")
+                }
+            }
+        }
+    }
+}

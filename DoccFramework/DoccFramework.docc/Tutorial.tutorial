@@ -5,11 +5,19 @@
         @Image(source: "tutorial_1", alt: "Debugger output example")
     }
     
-    @Chapter(name: "Saying hi to your debugger") {
+    @Chapter(name: "Saying hi to your debugger, for UIKit apps") {
         So, you want to say Hi too? Lets gets started with doing so.
         
-        @Image(source: "tutorial_1", alt: "Example output")
+        @Image(source: "tutorial_1", alt: "Showing example output in the debugger when running testsuite")
         
-        @TutorialReference(tutorial: "doc:SayingHi")
+        @TutorialReference(tutorial: "doc:UIKit")
+    }
+    
+    @Chapter(name: "Saying hi to your debugger, for SwiftUI apps") {
+        Just like with UIKit apps, in SwiftUI you might want to say Hi too. This tutorial will show you how.
+        
+        @Image(source: "tutorial_1", alt: "Showing example output in the debugger when running testsuite")
+        
+        @TutorialReference(tutorial: "doc:SwiftUI")
     }
 }

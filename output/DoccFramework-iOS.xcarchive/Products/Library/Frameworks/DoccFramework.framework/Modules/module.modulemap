@@ -1,0 +1,11 @@
+framework module DoccFramework {
+  umbrella header "DoccFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module DoccFramework.Swift {
+  header "DoccFramework-Swift.h"
+  requires objc
+}
