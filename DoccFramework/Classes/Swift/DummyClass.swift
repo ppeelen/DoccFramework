@@ -20,6 +20,7 @@ public class DummyClass {
     /// - Parameters:
     ///   - name: The name to say Hi to
     ///   - shouldSayBye: Wether to say bye or not
+    @objc
     public func sayHi(name: String, shouldSayBye: Bool = false) {
         self.name = name
         print("HI \(name)")

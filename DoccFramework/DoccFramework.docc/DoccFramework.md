@@ -6,3 +6,7 @@ The DoccFramework is a dummy framework, design to test the automatic generation 
 
 You can have a look at the framework at [https://www.github.com/ppeelen/DoccFramework](https://www.github.com/ppeelen/DoccFramework).
 
+## Topics
+
+### Getting started
+Read the article ``GettingStarted`` to get started.
