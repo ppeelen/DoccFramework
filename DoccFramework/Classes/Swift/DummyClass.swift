@@ -30,6 +30,11 @@ public class DummyClass {
         }
     }
     
+    /// This method is not exposed to objc. It will just post to the log that it is called 
+    public func nonObjcMethod() {
+        print("Called the nonObjcMethod")
+    }
+    
     /// This method should not end up in the documentation
     private func sayBye() {
         print("Bye \(name)")
