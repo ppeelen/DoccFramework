@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07542DE028DD992E001CBDB4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 07542DDF28DD992E001CBDB4 /* README.md */; };
+		07542DE228DDA207001CBDB4 /* DummyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07542DE128DDA207001CBDB4 /* DummyClassTests.swift */; };
 		0789898328DC9D7C0016F6B4 /* DoccFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0789898228DC9D7C0016F6B4 /* DoccFramework.docc */; };
 		0789898928DC9D7D0016F6B4 /* DoccFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0789897E28DC9D7C0016F6B4 /* DoccFramework.framework */; };
 		0789898E28DC9D7D0016F6B4 /* DoccFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789898D28DC9D7D0016F6B4 /* DoccFrameworkTests.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		07542DDF28DD992E001CBDB4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		07542DE128DDA207001CBDB4 /* DummyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyClassTests.swift; sourceTree = "<group>"; };
 		0789897E28DC9D7C0016F6B4 /* DoccFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DoccFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0789898128DC9D7C0016F6B4 /* DoccFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoccFramework.h; sourceTree = "<group>"; };
 		0789898228DC9D7C0016F6B4 /* DoccFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DoccFramework.docc; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0789898D28DC9D7D0016F6B4 /* DoccFrameworkTests.swift */,
+				07542DE128DDA207001CBDB4 /* DummyClassTests.swift */,
 			);
 			path = DoccFrameworkTests;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0789898E28DC9D7D0016F6B4 /* DoccFrameworkTests.swift in Sources */,
+				07542DE228DDA207001CBDB4 /* DummyClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +397,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +430,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.apptrix.DoccFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.apptrix.DoccFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,15 @@
+@Tutorials(name: "Saying Hi to the debug log") {
+    @Intro(title: "Introduction") {
+        We all feel lonely some times, and so does the debugger. Sometimes we just need to be able to say Hi to the debugger.
+        
+        @Image(source: "tutorial_1", alt: "Debugger output example")
+    }
+    
+    @Chapter(name: "Saying hi to your debugger") {
+        So, you want to say Hi too? Lets gets started with doing so.
+        
+        @Image(source: "tutorial_1", alt: "Example output")
+        
+        @TutorialReference(tutorial: "doc:SayingHi")
+    }
+}
