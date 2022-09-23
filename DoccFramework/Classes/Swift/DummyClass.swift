@@ -9,7 +9,7 @@ import Foundation
 
 /// This is just a dummy class called `DummyClass`
 @objc
-public class DummyClass {
+public class DummyClass: NSObject {
     
     /// The version number we have in this file
     public let versionNumber = "1.0.0"
