@@ -39,7 +39,6 @@
 		0789899B28DC9E0A0016F6B4 /* DummyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyClass.swift; sourceTree = "<group>"; };
 		0789899D28DC9F530016F6B4 /* DummyObjcClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyObjcClass.h; sourceTree = "<group>"; };
 		0789899F28DC9F600016F6B4 /* DummyObjcClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyObjcClass.m; sourceTree = "<group>"; };
-		07B5619828DDA7F600F43C1E /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +63,6 @@
 		0789897428DC9D7C0016F6B4 = {
 			isa = PBXGroup;
 			children = (
-				07B5619828DDA7F600F43C1E /* Package.swift */,
 				07542DDF28DD992E001CBDB4 /* README.md */,
 				0789898028DC9D7C0016F6B4 /* DoccFramework */,
 				0789898C28DC9D7D0016F6B4 /* DoccFrameworkTests */,
