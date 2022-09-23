@@ -27,3 +27,6 @@ $(xcrun --find docc) process-archive \
     --output-path DocsWeb \
     --hosting-base-path 'DoccFramework'
 ```
+
+## Documentation
+You can open and read the documentation here: [https://ppeelen.github.io/DoccFramework/documentation/doccframework](https://ppeelen.github.io/DoccFramework/documentation/doccframework). 
