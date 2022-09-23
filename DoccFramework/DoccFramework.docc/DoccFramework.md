@@ -9,4 +9,4 @@ You can have a look at the framework at [https://www.github.com/ppeelen/DoccFram
 ## Topics
 
 ### Getting started
-Read the article ``GettingStarted`` to get started.
+Read the article <doc:GettingStarted> to get started.
